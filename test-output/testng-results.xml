@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="6" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="18552" started-at="2019-01-14T05:07:18Z" finished-at="2019-01-14T05:07:36Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="18552" started-at="2019-01-14T05:07:18Z" finished-at="2019-01-14T05:07:36Z">
+      <class name="com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="setUp" is-config="true" duration-ms="734" started-at="2019-01-14T10:37:17Z" finished-at="2019-01-14T10:37:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-01-14T10:37:18Z" finished-at="2019-01-14T10:37:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-01-14T10:37:18Z" finished-at="2019-01-14T10:37:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="beforeMethod" is-config="true" duration-ms="234" started-at="2019-01-14T10:37:18Z" finished-at="2019-01-14T10:37:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI.VerifyAllCustomer(java.util.Hashtable) throws com.fasterxml.jackson.core.JsonParseException,com.fasterxml.jackson.databind.JsonMappingException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="VerifyAllCustomer(java.util.Hashtable)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="VerifyAllCustomer" duration-ms="6330" started-at="2019-01-14T10:37:18Z" data-provider="dp" finished-at="2019-01-14T10:37:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/customers?limit=3}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">
+            <message>
+              <![CDATA[Unrecognized field "data" (class com.sandeep.RESTFW.POJOClasses.Customer), not marked as ignorable (18 known properties: "discount", "tax_info", "invoice_prefix", "created", "account_balance", "shipping", "livemode", "currency", "subscriptions", "delinquent", "sources", "default_source", "id", "email", "object", "metadata", "tax_info_verification", "description"])
+ at [Source: {
+  "object": "list",
+  "data": [
+    {
+      "id": "cus_EL2vodhabCA9yD",
+      "object": "customer",
+      "account_balance": 100000,
+      "created": 1547439219,
+      "currency": "usd",
+      "default_source": null,
+      "delinquent": false,
+      "description": "This is to check the run for multiple params from same column",
+      "discount": null,
+      "email": "new1@gmail.com",
+      "invoice_prefix": "6AC5109",
+      "livemode": false,
+      "metadata": {
+      },
+      "shipping": null,
+      "sources": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/customers/cus_EL2vodhabCA9yD/sources"
+      },
+      "subscriptions": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/customers/cus_EL2vodhabCA9yD/subscriptions"
+      },
+      "tax_info": null,
+      "tax_info_verification": null
+    },
+    {
+      "id": "cus_EL2tpmnxtj1mkD",
+      "object": "customer",
+      "account_balance": 100000,
+      "created": 1547439086,
+      "currency": "usd",
+      "default_source": null,
+      "delinquent": false,
+      "description": "This is to check the run for multiple params from same column",
+      "discount": null,
+      "email": "new1@gmail.com",
+      "invoice_prefix": "825647C",
+      "livemode": false,
+      "metadata": {
+      },
+      "shipping": null,
+      "sources": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/customers/cus_EL2tpmnxtj1mkD/sources"
+      },
+      "subscriptions": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/customers/cus_EL2tpmnxtj1mkD/subscriptions"
+      },
+      "tax_info": null,
+      "tax_info_verification": null
+    },
+    {
+      "id": "cus_EL2psNbMo4Raa4",
+      "object": "customer",
+      "account_balance": 100000,
+      "created": 1547438843,
+      "currency": "usd",
+      "default_source": null,
+      "delinquent": false,
+      "description": "This is to check the run for multiple params from same column",
+      "discount": null,
+      "email": "new1@gmail.com",
+      "invoice_prefix": "E0BDDD8",
+      "livemode": false,
+      "metadata": {
+      },
+      "shipping": null,
+      "sources": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/customers/cus_EL2psNbMo4Raa4/sources"
+      },
+      "subscriptions": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/customers/cus_EL2psNbMo4Raa4/subscriptions"
+      },
+      "tax_info": null,
+      "tax_info_verification": null
+    }
+  ],
+  "has_more": true,
+  "url": "/v1/customers"
+}
+; line: 3, column: 12] (through reference chain: com.sandeep.RESTFW.POJOClasses.Customer["data"])]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "data" (class com.sandeep.RESTFW.POJOClasses.Customer), not marked as ignorable (18 known properties: "discount", "tax_info", "invoice_prefix", "created", "account_balance", "shipping", "livemode", "currency", "subscriptions", "delinquent", "sources", "default_source", "id", "email", "object", "metadata", "tax_info_verification", "description"])
+ at [Source: {
+  "object": "list",
+  "data": [
+    {
+      "id": "cus_EL2vodhabCA9yD",
+      "object": "customer",
+      "account_balance": 100000,
+      "created": 1547439219,
+      "currency": "usd",
+      "default_source": null,
+      "delinquent": false,
+      "description": "This is to check the run for multiple params from same column",
+      "discount": null,
+      "email": "new1@gmail.com",
+      "invoice_prefix": "6AC5109",
+      "livemode": false,
+      "metadata": {
+      },
+      "shipping": null,
+      "sources": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/customers/cus_EL2vodhabCA9yD/sources"
+      },
+      "subscriptions": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/customers/cus_EL2vodhabCA9yD/subscriptions"
+      },
+      "tax_info": null,
+      "tax_info_verification": null
+    },
+    {
+      "id": "cus_EL2tpmnxtj1mkD",
+      "object": "customer",
+      "account_balance": 100000,
+      "created": 1547439086,
+      "currency": "usd",
+      "default_source": null,
+      "delinquent": false,
+      "description": "This is to check the run for multiple params from same column",
+      "discount": null,
+      "email": "new1@gmail.com",
+      "invoice_prefix": "825647C",
+      "livemode": false,
+      "metadata": {
+      },
+      "shipping": null,
+      "sources": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/customers/cus_EL2tpmnxtj1mkD/sources"
+      },
+      "subscriptions": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/customers/cus_EL2tpmnxtj1mkD/subscriptions"
+      },
+      "tax_info": null,
+      "tax_info_verification": null
+    },
+    {
+      "id": "cus_EL2psNbMo4Raa4",
+      "object": "customer",
+      "account_balance": 100000,
+      "created": 1547438843,
+      "currency": "usd",
+      "default_source": null,
+      "delinquent": false,
+      "description": "This is to check the run for multiple params from same column",
+      "discount": null,
+      "email": "new1@gmail.com",
+      "invoice_prefix": "E0BDDD8",
+      "livemode": false,
+      "metadata": {
+      },
+      "shipping": null,
+      "sources": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/customers/cus_EL2psNbMo4Raa4/sources"
+      },
+      "subscriptions": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/customers/cus_EL2psNbMo4Raa4/subscriptions"
+      },
+      "tax_info": null,
+      "tax_info_verification": null
+    }
+  ],
+  "has_more": true,
+  "url": "/v1/customers"
+}
+; line: 3, column: 12] (through reference chain: com.sandeep.RESTFW.POJOClasses.Customer["data"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:62)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:834)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1093)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1477)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1455)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:282)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:140)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3798)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2842)
+	at com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI.VerifyAllCustomer(VerifyCreateCustomerAPI.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAllCustomer -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-01-14T10:37:25Z" finished-at="2019-01-14T10:37:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyAllCustomer status=FAILURE method=VerifyCreateCustomerAPI.VerifyAllCustomer(java.util.Hashtable)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-01-14T10:37:25Z" finished-at="2019-01-14T10:37:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI.VerifyDeleteCustomer(java.util.Hashtable) throws com.fasterxml.jackson.core.JsonParseException,com.fasterxml.jackson.databind.JsonMappingException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="VerifyDeleteCustomer(java.util.Hashtable)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="VerifyDeleteCustomer" duration-ms="2663" started-at="2019-01-14T10:37:25Z" data-provider="dp" finished-at="2019-01-14T10:37:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/customers/cus_EKLl3V0M5keDRQ}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDeleteCustomer -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-01-14T10:37:28Z" finished-at="2019-01-14T10:37:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyDeleteCustomer status=SUCCESS method=VerifyCreateCustomerAPI.VerifyDeleteCustomer(java.util.Hashtable)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-01-14T10:37:28Z" finished-at="2019-01-14T10:37:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI.VerifyRetrieveCustomer(java.util.Hashtable) throws com.fasterxml.jackson.core.JsonParseException,com.fasterxml.jackson.databind.JsonMappingException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="VerifyRetrieveCustomer(java.util.Hashtable)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="VerifyRetrieveCustomer" duration-ms="1847" started-at="2019-01-14T10:37:28Z" data-provider="dp" finished-at="2019-01-14T10:37:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/customers/cus_EKihy3lNHssNBX}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyRetrieveCustomer -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-01-14T10:37:30Z" finished-at="2019-01-14T10:37:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyRetrieveCustomer status=SUCCESS method=VerifyCreateCustomerAPI.VerifyRetrieveCustomer(java.util.Hashtable)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="VerifyUpdateCustomer(java.util.Hashtable)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="VerifyUpdateCustomer" duration-ms="2028" started-at="2019-01-14T10:37:30Z" data-provider="dp" finished-at="2019-01-14T10:37:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{description=Customer for nisha@example.com, endpoint=/customers/cus_EL1AZ1BqPgQWdo}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">
+            <message>
+              <![CDATA[Unrecognized field "error" (class com.sandeep.RESTFW.POJOClasses.Customer), not marked as ignorable (18 known properties: "discount", "tax_info", "invoice_prefix", "created", "account_balance", "shipping", "livemode", "currency", "subscriptions", "delinquent", "sources", "default_source", "id", "email", "object", "metadata", "tax_info_verification", "description"])
+ at [Source: {
+  "error": {
+    "code": "parameter_unknown",
+    "doc_url": "https://stripe.com/docs/error-codes/parameter-unknown",
+    "message": "Received unknown parameter: Customer for nisha@example.com",
+    "param": "Customer for nisha@example.com",
+    "type": "invalid_request_error"
+  }
+}
+; line: 2, column: 13] (through reference chain: com.sandeep.RESTFW.POJOClasses.Customer["error"])]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "error" (class com.sandeep.RESTFW.POJOClasses.Customer), not marked as ignorable (18 known properties: "discount", "tax_info", "invoice_prefix", "created", "account_balance", "shipping", "livemode", "currency", "subscriptions", "delinquent", "sources", "default_source", "id", "email", "object", "metadata", "tax_info_verification", "description"])
+ at [Source: {
+  "error": {
+    "code": "parameter_unknown",
+    "doc_url": "https://stripe.com/docs/error-codes/parameter-unknown",
+    "message": "Received unknown parameter: Customer for nisha@example.com",
+    "param": "Customer for nisha@example.com",
+    "type": "invalid_request_error"
+  }
+}
+; line: 2, column: 13] (through reference chain: com.sandeep.RESTFW.POJOClasses.Customer["error"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:62)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:834)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1093)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1477)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1455)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:282)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:140)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3798)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2842)
+	at com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI.VerifyUpdateCustomer(VerifyCreateCustomerAPI.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyUpdateCustomer -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-01-14T10:37:30Z" finished-at="2019-01-14T10:37:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI.VerifyUpdateCustomer(java.util.Hashtable) throws com.fasterxml.jackson.core.JsonParseException,com.fasterxml.jackson.databind.JsonMappingException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-01-14T10:37:32Z" finished-at="2019-01-14T10:37:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyUpdateCustomer status=FAILURE method=VerifyCreateCustomerAPI.VerifyUpdateCustomer(java.util.Hashtable)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-01-14T10:37:32Z" finished-at="2019-01-14T10:37:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI.VerifyUpdateCustomer1(java.util.Hashtable) throws com.fasterxml.jackson.core.JsonParseException,com.fasterxml.jackson.databind.JsonMappingException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="VerifyUpdateCustomer1(java.util.Hashtable)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="VerifyUpdateCustomer1" duration-ms="2086" started-at="2019-01-14T10:37:32Z" data-provider="dp" finished-at="2019-01-14T10:37:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{argument=description:Customer for nisha@example.com, endpoint=/customers/cus_EL1AZ1BqPgQWdo}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyUpdateCustomer1 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-01-14T10:37:34Z" finished-at="2019-01-14T10:37:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyUpdateCustomer1 status=SUCCESS method=VerifyCreateCustomerAPI.VerifyUpdateCustomer1(java.util.Hashtable)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="verifyCreateCustomer(java.util.Hashtable)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="verifyCreateCustomer" duration-ms="1983" started-at="2019-01-14T10:37:34Z" data-provider="dp" finished-at="2019-01-14T10:37:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{argument=email:new1@gmail.com;description:This is to check the run for multiple params from same column;account_balance:100000, expectedStatusCode=201.0, endpoint=/customers}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateCustomer -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-01-14T10:37:34Z" finished-at="2019-01-14T10:37:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI.verifyCreateCustomer(java.util.Hashtable) throws com.fasterxml.jackson.core.JsonParseException,com.fasterxml.jackson.databind.JsonMappingException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-01-14T10:37:36Z" finished-at="2019-01-14T10:37:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCreateCustomer status=SUCCESS method=VerifyCreateCustomerAPI.verifyCreateCustomer(java.util.Hashtable)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-01-14T10:37:36Z" finished-at="2019-01-14T10:37:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-01-14T10:37:36Z" finished-at="2019-01-14T10:37:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@8dbdac1]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-01-14T10:37:36Z" finished-at="2019-01-14T10:37:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

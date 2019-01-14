@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\Dell\Workspace\RestAssured1\RESTFW\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI" hash-for-method="VerifyAllCustomer({endpoint=/customers?limit=3})">VerifyAllCustomer({endpoint=/customers?limit=3})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI" hash-for-method="VerifyUpdateCustomer({description=Customer for nisha@example.com, endpoint=/customers/cus_EL1AZ1BqPgQWdo})">VerifyUpdateCustomer({description=Customer for nisha@example.com, endpoint=/customers/cus_EL1AZ1BqPgQWdo})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI" hash-for-method="VerifyDeleteCustomer({endpoint=/customers/cus_EKLl3V0M5keDRQ})">VerifyDeleteCustomer({endpoint=/customers/cus_EKLl3V0M5keDRQ})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI" hash-for-method="VerifyRetrieveCustomer({endpoint=/customers/cus_EKihy3lNHssNBX})">VerifyRetrieveCustomer({endpoint=/customers/cus_EKihy3lNHssNBX})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI" hash-for-method="VerifyUpdateCustomer1({argument=description:Customer for nisha@example.com, endpoint=/customers/cus_EL1AZ1BqPgQWdo})">VerifyUpdateCustomer1({argument=description:Customer for nisha@example.com, endpoint=/customers/cus_EL1AZ1BqPgQWdo})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI" hash-for-method="verifyCreateCustomer({argument=email:new1@gmail.com;description:This is to check the run for multiple params from same co...)">verifyCreateCustomer({argument=email:new1@gmail.com;description:This is to check the run for multiple params from same co...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyAllCustomer({endpoint=/customers?limit=3})">
+                  </a> <!-- VerifyAllCustomer({endpoint=/customers?limit=3}) -->
+                  <span class="method-name">VerifyAllCustomer</span>
+                  <span class="parameters">({endpoint=/customers?limit=3})</span>
+                  <div class="stack-trace">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;data&quot; (class com.sandeep.RESTFW.POJOClasses.Customer), not marked as ignorable (18 known properties: &quot;discount&quot;, &quot;tax_info&quot;, &quot;invoice_prefix&quot;, &quot;created&quot;, &quot;account_balance&quot;, &quot;shipping&quot;, &quot;livemode&quot;, &quot;currency&quot;, &quot;subscriptions&quot;, &quot;delinquent&quot;, &quot;sources&quot;, &quot;default_source&quot;, &quot;id&quot;, &quot;email&quot;, &quot;object&quot;, &quot;metadata&quot;, &quot;tax_info_verification&quot;, &quot;description&quot;])
+ at [Source: {
+  &quot;object&quot;: &quot;list&quot;,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: &quot;cus_EL2vodhabCA9yD&quot;,
+      &quot;object&quot;: &quot;customer&quot;,
+      &quot;account_balance&quot;: 100000,
+      &quot;created&quot;: 1547439219,
+      &quot;currency&quot;: &quot;usd&quot;,
+      &quot;default_source&quot;: null,
+      &quot;delinquent&quot;: false,
+      &quot;description&quot;: &quot;This is to check the run for multiple params from same column&quot;,
+      &quot;discount&quot;: null,
+      &quot;email&quot;: &quot;new1@gmail.com&quot;,
+      &quot;invoice_prefix&quot;: &quot;6AC5109&quot;,
+      &quot;livemode&quot;: false,
+      &quot;metadata&quot;: {
+      },
+      &quot;shipping&quot;: null,
+      &quot;sources&quot;: {
+        &quot;object&quot;: &quot;list&quot;,
+        &quot;data&quot;: [
+
+        ],
+        &quot;has_more&quot;: false,
+        &quot;total_count&quot;: 0,
+        &quot;url&quot;: &quot;/v1/customers/cus_EL2vodhabCA9yD/sources&quot;
+      },
+      &quot;subscriptions&quot;: {
+        &quot;object&quot;: &quot;list&quot;,
+        &quot;data&quot;: [
+
+        ],
+        &quot;has_more&quot;: false,
+        &quot;total_count&quot;: 0,
+        &quot;url&quot;: &quot;/v1/customers/cus_EL2vodhabCA9yD/subscriptions&quot;
+      },
+      &quot;tax_info&quot;: null,
+      &quot;tax_info_verification&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;cus_EL2tpmnxtj1mkD&quot;,
+      &quot;object&quot;: &quot;customer&quot;,
+      &quot;account_balance&quot;: 100000,
+      &quot;created&quot;: 1547439086,
+      &quot;currency&quot;: &quot;usd&quot;,
+      &quot;default_source&quot;: null,
+      &quot;delinquent&quot;: false,
+      &quot;description&quot;: &quot;This is to check the run for multiple params from same column&quot;,
+      &quot;discount&quot;: null,
+      &quot;email&quot;: &quot;new1@gmail.com&quot;,
+      &quot;invoice_prefix&quot;: &quot;825647C&quot;,
+      &quot;livemode&quot;: false,
+      &quot;metadata&quot;: {
+      },
+      &quot;shipping&quot;: null,
+      &quot;sources&quot;: {
+        &quot;object&quot;: &quot;list&quot;,
+        &quot;data&quot;: [
+
+        ],
+        &quot;has_more&quot;: false,
+        &quot;total_count&quot;: 0,
+        &quot;url&quot;: &quot;/v1/customers/cus_EL2tpmnxtj1mkD/sources&quot;
+      },
+      &quot;subscriptions&quot;: {
+        &quot;object&quot;: &quot;list&quot;,
+        &quot;data&quot;: [
+
+        ],
+        &quot;has_more&quot;: false,
+        &quot;total_count&quot;: 0,
+        &quot;url&quot;: &quot;/v1/customers/cus_EL2tpmnxtj1mkD/subscriptions&quot;
+      },
+      &quot;tax_info&quot;: null,
+      &quot;tax_info_verification&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;cus_EL2psNbMo4Raa4&quot;,
+      &quot;object&quot;: &quot;customer&quot;,
+      &quot;account_balance&quot;: 100000,
+      &quot;created&quot;: 1547438843,
+      &quot;currency&quot;: &quot;usd&quot;,
+      &quot;default_source&quot;: null,
+      &quot;delinquent&quot;: false,
+      &quot;description&quot;: &quot;This is to check the run for multiple params from same column&quot;,
+      &quot;discount&quot;: null,
+      &quot;email&quot;: &quot;new1@gmail.com&quot;,
+      &quot;invoice_prefix&quot;: &quot;E0BDDD8&quot;,
+      &quot;livemode&quot;: false,
+      &quot;metadata&quot;: {
+      },
+      &quot;shipping&quot;: null,
+      &quot;sources&quot;: {
+        &quot;object&quot;: &quot;list&quot;,
+        &quot;data&quot;: [
+
+        ],
+        &quot;has_more&quot;: false,
+        &quot;total_count&quot;: 0,
+        &quot;url&quot;: &quot;/v1/customers/cus_EL2psNbMo4Raa4/sources&quot;
+      },
+      &quot;subscriptions&quot;: {
+        &quot;object&quot;: &quot;list&quot;,
+        &quot;data&quot;: [
+
+        ],
+        &quot;has_more&quot;: false,
+        &quot;total_count&quot;: 0,
+        &quot;url&quot;: &quot;/v1/customers/cus_EL2psNbMo4Raa4/subscriptions&quot;
+      },
+      &quot;tax_info&quot;: null,
+      &quot;tax_info_verification&quot;: null
+    }
+  ],
+  &quot;has_more&quot;: true,
+  &quot;url&quot;: &quot;/v1/customers&quot;
+}
+; line: 3, column: 12] (through reference chain: com.sandeep.RESTFW.POJOClasses.Customer[&quot;data&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:62)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:834)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1093)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1477)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1455)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:282)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:140)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3798)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2842)
+	at com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI.VerifyAllCustomer(VerifyCreateCustomerAPI.java:109)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyUpdateCustomer({description=Customer for nisha@example.com, endpoint=/customers/cus_EL1AZ1BqPgQWdo})">
+                  </a> <!-- VerifyUpdateCustomer({description=Customer for nisha@example.com, endpoint=/customers/cus_EL1AZ1BqPgQWdo}) -->
+                  <span class="method-name">VerifyUpdateCustomer</span>
+                  <span class="parameters">({description=Customer for nisha@example.com, endpoint=/customers/cus_EL1AZ1BqPgQWdo})</span>
+                  <div class="stack-trace">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;error&quot; (class com.sandeep.RESTFW.POJOClasses.Customer), not marked as ignorable (18 known properties: &quot;discount&quot;, &quot;tax_info&quot;, &quot;invoice_prefix&quot;, &quot;created&quot;, &quot;account_balance&quot;, &quot;shipping&quot;, &quot;livemode&quot;, &quot;currency&quot;, &quot;subscriptions&quot;, &quot;delinquent&quot;, &quot;sources&quot;, &quot;default_source&quot;, &quot;id&quot;, &quot;email&quot;, &quot;object&quot;, &quot;metadata&quot;, &quot;tax_info_verification&quot;, &quot;description&quot;])
+ at [Source: {
+  &quot;error&quot;: {
+    &quot;code&quot;: &quot;parameter_unknown&quot;,
+    &quot;doc_url&quot;: &quot;https://stripe.com/docs/error-codes/parameter-unknown&quot;,
+    &quot;message&quot;: &quot;Received unknown parameter: Customer for nisha@example.com&quot;,
+    &quot;param&quot;: &quot;Customer for nisha@example.com&quot;,
+    &quot;type&quot;: &quot;invalid_request_error&quot;
+  }
+}
+; line: 2, column: 13] (through reference chain: com.sandeep.RESTFW.POJOClasses.Customer[&quot;error&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:62)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:834)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1093)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1477)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1455)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:282)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:140)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3798)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2842)
+	at com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI.VerifyUpdateCustomer(VerifyCreateCustomerAPI.java:83)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyDeleteCustomer({endpoint=/customers/cus_EKLl3V0M5keDRQ})">
+                  </a> <!-- VerifyDeleteCustomer({endpoint=/customers/cus_EKLl3V0M5keDRQ}) -->
+                  <span class="method-name">VerifyDeleteCustomer</span>
+                  <span class="parameters">({endpoint=/customers/cus_EKLl3V0M5keDRQ})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyRetrieveCustomer({endpoint=/customers/cus_EKihy3lNHssNBX})">
+                  </a> <!-- VerifyRetrieveCustomer({endpoint=/customers/cus_EKihy3lNHssNBX}) -->
+                  <span class="method-name">VerifyRetrieveCustomer</span>
+                  <span class="parameters">({endpoint=/customers/cus_EKihy3lNHssNBX})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyUpdateCustomer1({argument=description:Customer for nisha@example.com, endpoint=/customers/cus_EL1AZ1BqPgQWdo})">
+                  </a> <!-- VerifyUpdateCustomer1({argument=description:Customer for nisha@example.com, endpoint=/customers/cus_EL1AZ1BqPgQWdo}) -->
+                  <span class="method-name">VerifyUpdateCustomer1</span>
+                  <span class="parameters">({argument=description:Customer for nisha@example.com, endpoint=/customers/cus_EL1AZ1BqPgQWdo})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCreateCustomer({argument=email:new1@gmail.com;description:This is to check the run for multiple params from same co...)">
+                  </a> <!-- verifyCreateCustomer({argument=email:new1@gmail.com;description:This is to check the run for multiple params from same co...) -->
+                  <span class="method-name">verifyCreateCustomer</span>
+                  <span class="parameters">({argument=email:new1@gmail.com;description:This is to check the run for multiple params from same column;account_balance:100000, expectedStatusCode=201.0, endpoint=/customers})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Dell\Workspace\RestAssured1\RESTFW\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.sandeep.RESTFW.CustomListeners.CustomListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'VerifyAllCustomer')
+data.setCell(0, 2, 'com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI')
+data.setCell(0, 3, 6330);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'VerifyDeleteCustomer')
+data.setCell(1, 2, 'com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI')
+data.setCell(1, 3, 2663);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'VerifyUpdateCustomer1')
+data.setCell(2, 2, 'com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI')
+data.setCell(2, 3, 2086);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'VerifyUpdateCustomer')
+data.setCell(3, 2, 'com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI')
+data.setCell(3, 3, 2028);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyCreateCustomer')
+data.setCell(4, 2, 'com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI')
+data.setCell(4, 3, 1983);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'VerifyRetrieveCustomer')
+data.setCell(5, 2, 'com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI')
+data.setCell(5, 3, 1847);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">750 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">750 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI.VerifyAllCustomer(java.util.Hashtab...)</span>
+                <span class="method-start">812 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyAllCustomer({endpoint=/customers?limit=3})</span>
+                <span class="method-start">1046 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=VerifyAllCustomer status=FAILURE method=VerifyCreateCustomerAPI.VerifyAllCustomer(j...)</span>
+                <span class="method-start">7907 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI.VerifyDeleteCustomer(java.util.Hash...)</span>
+                <span class="method-start">7994 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyDeleteCustomer({endpoint=/customers/cus_EKLl3V0M5keDRQ})</span>
+                <span class="method-start">7995 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=VerifyDeleteCustomer status=SUCCESS method=VerifyCreateCustomerAPI.VerifyDeleteCust...)</span>
+                <span class="method-start">10877 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI.VerifyRetrieveCustomer(java.util.Ha...)</span>
+                <span class="method-start">10958 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyRetrieveCustomer({endpoint=/customers/cus_EKihy3lNHssNBX})</span>
+                <span class="method-start">10959 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=VerifyRetrieveCustomer status=SUCCESS method=VerifyCreateCustomerAPI.VerifyRetrieve...)</span>
+                <span class="method-start">12853 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyUpdateCustomer({description=Customer for nisha@example.com, endpoint=/customers/cus_EL1AZ1BqPgQWdo})</span>
+                <span class="method-start">12915 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI.VerifyUpdateCustomer(java.util.Hash...)</span>
+                <span class="method-start">12915 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=VerifyUpdateCustomer status=FAILURE method=VerifyCreateCustomerAPI.VerifyUpdateCust...)</span>
+                <span class="method-start">14975 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">VerifyUpdateCustomer1({argument=description:Customer for nisha@example.com, endpoint=/customers/cus_EL1AZ1BqPgQWdo})</span>
+                <span class="method-start">15068 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI.VerifyUpdateCustomer1(java.util.Has...)</span>
+                <span class="method-start">15068 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=VerifyUpdateCustomer1 status=SUCCESS method=VerifyCreateCustomerAPI.VerifyUpdateCus...)</span>
+                <span class="method-start">17185 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI.verifyCreateCustomer(java.util.Hash...)</span>
+                <span class="method-start">17248 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCreateCustomer({argument=email:new1@gmail.com;description:This is to check the run for multiple params from same co...)</span>
+                <span class="method-start">17248 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">19271 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyCreateCustomer status=SUCCESS method=VerifyCreateCustomerAPI.verifyCreateCust...)</span>
+                <span class="method-start">19271 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">19286 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">19318 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
