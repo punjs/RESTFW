@@ -3,23 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI">
+      <class name="com.sandeep.RESTFW.Testcases.VerifyChargeAPI">
         <methods>
-          <include name="testtobeFailed"/>
+          <include name="afterClass"/>
           <include name="tearDown"/>
           <include name="afterTest"/>
-          <include name="afterMethod"/>
-          <include name="verifytheuser" invocation-numbers="0 1 2"/>
-          <include name="verifytheuser2"/>
-          <include name="afterClass"/>
-          <include name="verifytheuser1"/>
           <include name="setUp"/>
           <include name="beforeTest"/>
+          <include name="afterMethod"/>
           <include name="beforeClass"/>
+          <include name="verifyCreateCharge" invocation-numbers="0"/>
           <include name="beforeMethod"/>
-          <include name="testSkipped"/>
         </methods>
-      </class> <!-- com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI -->
+      </class> <!-- com.sandeep.RESTFW.Testcases.VerifyChargeAPI -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -12,14 +12,17 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.sandeep.RESTFW.Utils.ConfigProperties;
 import com.sandeep.RESTFW.Utils.ExcelReader;
 import com.sandeep.RESTFW.Utils.ExtentManager;
+import com.sandeep.RESTFW.Utils.TestUtils;
 
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
@@ -29,7 +32,7 @@ public class TestSetup {
 
 	public static ConfigProperties configProperties=null;
 	public static RequestSpecification requestspecification;
-	
+	public static SoftAssert softassertion =new SoftAssert() 	;
 	public ExcelReader excelReader = new ExcelReader(System.getProperty("user.dir")+
 			"\\src\\test\\resources\\testData\\TestData.xlsx");
 	
@@ -46,9 +49,10 @@ public class TestSetup {
 		extent=ExtentManager.GetExtent();
 
 		RestAssured.baseURI = configProperties.getbaseURI();
+		
 		RestAssured.basePath = configProperties.getbasePath();
 		//System.out.println(""+System.getProperty("user.dir")+"\\src\\test\\resources\\testData\\TestData.xlsx");
-
+        TestUtils.moveReportToAchive();
 	}
 
 	@BeforeTest
@@ -121,9 +125,15 @@ public class TestSetup {
 
 	public static RequestSpecification setRequestSpecification(String Key)
 	{
-		return given().auth().basic(Key, "").when();
+		return given().accept(ContentType.JSON).auth().basic(Key, "");
+
+	
 	}
 	
+	public static  RequestSpecification setRequestSpecification1()
+	{
+		return given().accept(ContentType.JSON).auth().basic(configProperties.getsecretKey(), "").when();
+	}
 	
 	public static RequestSpecification setFormParams(String arguments,RequestSpecification requestspec)
 	{
@@ -138,7 +148,8 @@ public class TestSetup {
 		return requestspec;
 		}
 
-
+	
+	
 
 
 }

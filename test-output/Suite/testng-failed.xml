@@ -6,20 +6,19 @@
   </listeners>
   <test name="Test(failed)">
     <classes>
-      <class name="com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI">
+      <class name="com.sandeep.RESTFW.Testcases.VerifyChargeAPI">
         <methods>
           <include name="afterClass"/>
-          <include name="VerifyAllCustomer" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="afterTest"/>
           <include name="setUp"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="beforeClass"/>
-          <include name="VerifyUpdateCustomer" invocation-numbers="0"/>
+          <include name="verifyRetrieveAllCharge" invocation-numbers="0"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI -->
+      </class> <!-- com.sandeep.RESTFW.Testcases.VerifyChargeAPI -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -11,7 +11,7 @@ public class CustomerAPI extends TestSetup {
 	public static Response sendPostRequestWithValidData(Hashtable<String,String> data)
 	
 	{
-		System.out.println("Hallo");
+		//System.out.println("Hallo");
 		Response response =
 				 setFormParams(data.get("argument"),requestspecification)
 				 .post(data.get("endpoint")).then().extract().response();
