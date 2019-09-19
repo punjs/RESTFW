@@ -35,6 +35,10 @@ public class VerifyChargeAPI extends TestSetup {
 	@Test(dataProviderClass=DataProviderClass.class,dataProvider="dp",enabled = false)
 	public void verifyCreateCharge(Hashtable<String, String> data) throws JsonParseException, JsonMappingException, IOException
 	{
+	//RestAssured.baseURI = configProperties.getbaseURI();
+		
+	//	RestAssured.basePath = configProperties.getbasePath();
+		
 		//Response response = 
 			//	setFormParams(data.get("argument"),requestspecification).when().post("/charges").then()
 		//.extract().response();
