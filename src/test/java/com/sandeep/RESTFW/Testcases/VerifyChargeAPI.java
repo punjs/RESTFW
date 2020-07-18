@@ -40,10 +40,7 @@ public class VerifyChargeAPI extends TestSetup {
 		//.extract().response();
 		
 		
-		
-		
-		
-		Response response=CustomerAPI.sendPostRequestWithValidData(data);
+		Response response=CustomerAPI.sendPostRequestWithSingleData(data);
 		//System.out.println(response.asString());
 		//ObjectMapper mapper = new ObjectMapper();
        //Charges charge =mapper.readValue(response.asString(), Charges.class);

@@ -8,14 +8,14 @@ import io.restassured.response.Response;
 
 public class CustomerAPI extends TestSetup {
 	
-	public static Response sendPostRequestWithValidData(Hashtable<String,String> data)
+//	public static Response sendPostRequestWithValidData(Hashtable<String,String> data)
 	
 	{
 		//System.out.println("Hallo");
-		Response response =
-				 setFormParams(data.get("argument"),requestspecification)
-				 .post(data.get("endpoint")).then().extract().response();
-			return response;
+		//Response response =
+//				 setFormParams(data.get("argument"),requestspecification)
+//				 .post(data.get("endpoint")).then().extract().response();
+//			return response;
 	}
 	
 	

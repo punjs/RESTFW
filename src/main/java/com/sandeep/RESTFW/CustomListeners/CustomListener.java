@@ -64,8 +64,7 @@ public class CustomListener extends TestSetup implements ITestListener, ISuiteLi
 	}
 
 	public void onTestStart(ITestResult result) {
-		ExtentTest child = ClasslevelLogger.get().createNode(result.getName());
-		TestLevelLogger.set(child);
+		
 		
 		
 	}

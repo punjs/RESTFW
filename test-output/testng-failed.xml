@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.sandeep.RESTFW.CustomListeners.CustomListener"/>
-  </listeners>
-  <test name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.sandeep.RESTFW.Testcases.VerifyChargeAPI">
+      <class name="com.sandeep.RESTFW.Testcases.SampleTest2">
         <methods>
           <include name="afterClass"/>
           <include name="tearDown"/>
@@ -15,10 +12,11 @@
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="beforeClass"/>
-          <include name="verifyRetrieveAllCharge" invocation-numbers="0"/>
+          <include name="check5"/>
+          <include name="check6"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.sandeep.RESTFW.Testcases.VerifyChargeAPI -->
+      </class> <!-- com.sandeep.RESTFW.Testcases.SampleTest2 -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

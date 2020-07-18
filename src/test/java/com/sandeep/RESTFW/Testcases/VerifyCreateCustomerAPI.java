@@ -40,13 +40,12 @@ public class VerifyCreateCustomerAPI extends TestSetup {
 		@Test(dataProviderClass=DataProviderClass.class,dataProvider="dp",enabled = false)
 		public void verifyCreateCustomer(Hashtable<String, String> data) throws JsonParseException, JsonMappingException, IOException
 		{
-			Response response=CustomerAPI.sendPostRequestWithValidData(data);
+			Response response=CustomerAPI.sendPostRequestWithSingleData(data);
 			ObjectMapper mapper = new ObjectMapper();
 			Customer customer =mapper.readValue(response.asString(), Customer.class);
 			Logger().log(Status.INFO, "Applying soft assertion on the Status Code");
 			softassertion.assertEquals(response.getStatusCode(), TestUtils.getExpectedStatusCode(data.get("expectedStatusCode")));
-			
-						Logger().log(Status.INFO, "Applying soft assertion on the Email ID");
+			Logger().log(Status.INFO, "Applying soft assertion on the Email ID");
 			softassertion.assertEquals(customer.getEmail(), data.get("email"));
 			
 		}
@@ -90,7 +89,7 @@ public class VerifyCreateCustomerAPI extends TestSetup {
 		public void VerifyUpdateCustomer1(Hashtable<String, String> data) throws JsonParseException, JsonMappingException, IOException
 		{
 			
-			Response response=CustomerAPI.sendPostRequestWithValidData(data);
+			Response response=CustomerAPI.sendPostRequestWithSingleData(data);
 			System.out.println(""+response.asString());
 			ObjectMapper mapper = new ObjectMapper();
 			Customer customer =mapper.readValue(response.asString(), Customer.class);
@@ -139,6 +138,8 @@ public class VerifyCreateCustomerAPI extends TestSetup {
 			Logger().log(Status.PASS, "Assertion is passed when we passed Json body as a input");
 
 		}
+		
+
 
 		}
 		

@@ -1,165 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="11" total="15" passed="4">
+<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="10239" started-at="2019-02-13T16:08:31Z" finished-at="2019-02-13T16:08:41Z">
+  <suite name="Default suite" duration-ms="4276" started-at="2020-07-16T14:44:55Z" finished-at="2020-07-16T14:45:00Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="10239" started-at="2019-02-13T16:08:31Z" finished-at="2019-02-13T16:08:41Z">
-      <class name="com.sandeep.RESTFW.Testcases.VerifyChargeAPI">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyChargeAPI@6c64cb25]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-13T21:38:36Z" finished-at="2019-02-13T21:38:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyChargeAPI@6c64cb25]" name="beforeMethod" is-config="true" duration-ms="16" started-at="2019-02-13T21:38:36Z" finished-at="2019-02-13T21:38:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.sandeep.RESTFW.Testcases.VerifyChargeAPI.verifyRetrieveCharge(java.util.Hashtable) throws com.fasterxml.jackson.core.JsonParseException,com.fasterxml.jackson.databind.JsonMappingException,java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyRetrieveCharge(java.util.Hashtable)[pri:1, instance:com.sandeep.RESTFW.Testcases.VerifyChargeAPI@6c64cb25]" name="verifyRetrieveCharge" duration-ms="3137" started-at="2019-02-13T21:38:36Z" data-provider="dp" finished-at="2019-02-13T21:38:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{endpoint=charges/ch_1DwmfkJ06AnIpd2yPPLsRCv9}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRetrieveCharge -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyChargeAPI@6c64cb25]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-02-13T21:38:39Z" finished-at="2019-02-13T21:38:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyRetrieveCharge status=SUCCESS method=VerifyChargeAPI.verifyRetrieveCharge(java.util.Hashtable)[pri:1, instance:com.sandeep.RESTFW.Testcases.VerifyChargeAPI@6c64cb25] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyChargeAPI@6c64cb25]" name="beforeMethod" is-config="true" duration-ms="16" started-at="2019-02-13T21:38:39Z" finished-at="2019-02-13T21:38:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.sandeep.RESTFW.Testcases.VerifyChargeAPI.verifyRetrieveAllCharge(java.util.Hashtable) throws com.fasterxml.jackson.core.JsonParseException,com.fasterxml.jackson.databind.JsonMappingException,java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyRetrieveAllCharge(java.util.Hashtable)[pri:2, instance:com.sandeep.RESTFW.Testcases.VerifyChargeAPI@6c64cb25]" name="verifyRetrieveAllCharge" duration-ms="2378" started-at="2019-02-13T21:38:39Z" data-provider="dp" finished-at="2019-02-13T21:38:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{limit=3, endpoint=charges}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRetrieveAllCharge -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyChargeAPI@6c64cb25]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-02-13T21:38:41Z" finished-at="2019-02-13T21:38:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyRetrieveAllCharge status=SUCCESS method=VerifyChargeAPI.verifyRetrieveAllCharge(java.util.Hashtable)[pri:2, instance:com.sandeep.RESTFW.Testcases.VerifyChargeAPI@6c64cb25] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyChargeAPI@6c64cb25]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-02-13T21:38:41Z" finished-at="2019-02-13T21:38:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.sandeep.RESTFW.Testcases.VerifyChargeAPI -->
-      <class name="com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@245b4bdc]" name="setUp" is-config="true" duration-ms="531" started-at="2019-02-13T21:38:31Z" finished-at="2019-02-13T21:38:31Z">
+    <test name="Default test" duration-ms="4276" started-at="2020-07-16T14:44:55Z" finished-at="2020-07-16T14:45:00Z">
+      <class name="com.sandeep.RESTFW.Testcases.SampleTest2">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6]" name="setUp" is-config="true" duration-ms="668" started-at="2020-07-16T20:14:55Z" finished-at="2020-07-16T20:14:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@245b4bdc]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-02-13T21:38:31Z" finished-at="2019-02-13T21:38:31Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-07-16T20:14:55Z" finished-at="2020-07-16T20:14:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@245b4bdc]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-02-13T21:38:31Z" finished-at="2019-02-13T21:38:31Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6]" name="beforeClass" is-config="true" duration-ms="4" started-at="2020-07-16T20:14:55Z" finished-at="2020-07-16T20:14:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@245b4bdc]" name="beforeMethod" is-config="true" duration-ms="260" started-at="2019-02-13T21:38:31Z" finished-at="2019-02-13T21:38:31Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2020-07-16T20:14:55Z" finished-at="2020-07-16T20:14:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI.JsonBodyasJson()]]>
+                <![CDATA[public void com.sandeep.RESTFW.Testcases.SampleTest2.check4()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="JsonBodyasJson()[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@245b4bdc]" name="JsonBodyasJson" duration-ms="2453" started-at="2019-02-13T21:38:31Z" finished-at="2019-02-13T21:38:34Z">
+        <test-method status="PASS" signature="check4()[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6]" name="check4" duration-ms="15" started-at="2020-07-16T20:14:55Z" finished-at="2020-07-16T20:14:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- JsonBodyasJson -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@245b4bdc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-02-13T21:38:34Z" finished-at="2019-02-13T21:38:34Z">
+        </test-method> <!-- check4 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6]" name="afterMethod" is-config="true" duration-ms="373" started-at="2020-07-16T20:14:55Z" finished-at="2020-07-16T20:14:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=JsonBodyasJson status=SUCCESS method=VerifyCreateCustomerAPI.JsonBodyasJson()[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@245b4bdc] output={null}]]]>
+                <![CDATA[[TestResult name=check4 status=SUCCESS method=SampleTest2.check4()[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@245b4bdc]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-13T21:38:34Z" finished-at="2019-02-13T21:38:34Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-16T20:14:56Z" finished-at="2020-07-16T20:14:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI.bodyexample()]]>
+                <![CDATA[public void com.sandeep.RESTFW.Testcases.SampleTest2.check5()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="bodyexample()[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@245b4bdc]" name="bodyexample" duration-ms="1393" started-at="2019-02-13T21:38:34Z" finished-at="2019-02-13T21:38:35Z">
+        <test-method status="FAIL" signature="check5()[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6]" name="check5" duration-ms="6" started-at="2020-07-16T20:14:56Z" finished-at="2020-07-16T20:14:56Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.sandeep.RESTFW.Testcases.SampleTest2.check5(SampleTest2.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bodyexample -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@245b4bdc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-02-13T21:38:36Z" finished-at="2019-02-13T21:38:36Z">
+        </test-method> <!-- check5 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6]" name="afterMethod" is-config="true" duration-ms="97" started-at="2020-07-16T20:14:56Z" finished-at="2020-07-16T20:14:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=bodyexample status=SUCCESS method=VerifyCreateCustomerAPI.bodyexample()[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@245b4bdc] output={null}]]]>
+                <![CDATA[[TestResult name=check5 status=FAILURE method=SampleTest2.check5()[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@245b4bdc]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-02-13T21:38:36Z" finished-at="2019-02-13T21:38:36Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-16T20:14:56Z" finished-at="2020-07-16T20:14:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sandeep.RESTFW.Testcases.SampleTest2.check6()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="check6()[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6]" name="check6" duration-ms="2" started-at="2020-07-16T20:14:56Z" finished-at="2020-07-16T20:14:56Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	null,
+	null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	null,
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.sandeep.RESTFW.Testcases.SampleTest2.check6(SampleTest2.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check6 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6]" name="afterMethod" is-config="true" duration-ms="43" started-at="2020-07-16T20:14:56Z" finished-at="2020-07-16T20:14:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=check6 status=FAILURE method=SampleTest2.check6()[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6]" name="test2" duration-ms="3615" started-at="2020-07-16T20:14:56Z" finished-at="2020-07-16T20:15:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-16T20:14:56Z" finished-at="2020-07-16T20:14:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sandeep.RESTFW.Testcases.SampleTest2.test2()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6]" name="afterMethod" is-config="true" duration-ms="72" started-at="2020-07-16T20:15:00Z" finished-at="2020-07-16T20:15:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test2 status=SUCCESS method=SampleTest2.test2()[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-07-16T20:15:00Z" finished-at="2020-07-16T20:15:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@245b4bdc]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-02-13T21:38:41Z" finished-at="2019-02-13T21:38:41Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-07-16T20:15:00Z" finished-at="2020-07-16T20:15:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI@245b4bdc]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-02-13T21:38:41Z" finished-at="2019-02-13T21:38:41Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-07-16T20:15:00Z" finished-at="2020-07-16T20:15:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.sandeep.RESTFW.Testcases.VerifyCreateCustomerAPI -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.sandeep.RESTFW.Testcases.SampleTest2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

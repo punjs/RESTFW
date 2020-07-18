@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jan 26 13:39:24 IST 2019</td>
+<td>Started on:</td><td>Thu Jul 16 20:14:55 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5898 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4276 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,9 +75,11 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.sandeep.RESTFW.Testcases.VerifyChargeAPI.verifyCreateCharge()'><b>verifyCreateCharge</b><br>Test class: com.sandeep.RESTFW.Testcases.VerifyChargeAPI<br>Parameters: {argument=amount:100;currency:USD;source:tok_mastercard;description:This is to check the run for multiple params from same column, expectedStatusCode=200, endpoint=/charges}</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.sandeep.RESTFW.Testcases.VerifyChargeAPI.verifyCreateCharge(VerifyChargeAPI.java:51)
+<td title='com.sandeep.RESTFW.Testcases.SampleTest2.check5()'><b>check5</b><br>Test class: com.sandeep.RESTFW.Testcases.SampleTest2</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.sandeep.RESTFW.Testcases.SampleTest2.check5(SampleTest2.java:36)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -103,9 +105,11 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1601756706", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1601756706'><pre>java.lang.NullPointerException
-	at com.sandeep.RESTFW.Testcases.VerifyChargeAPI.verifyCreateCharge(VerifyChargeAPI.java:51)
+</pre></div><a href='#' onClick='toggleBox("stack-trace923083575", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace923083575'><pre>java.lang.AssertionError: The following asserts failed:
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.sandeep.RESTFW.Testcases.SampleTest2.check5(SampleTest2.java:36)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -132,8 +136,92 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>5</td>
-<td>com.sandeep.RESTFW.Testcases.VerifyChargeAPI@72057ecf</td></tr>
+<td>0</td>
+<td>com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6</td></tr>
+<tr>
+<td title='com.sandeep.RESTFW.Testcases.SampleTest2.check6()'><b>check6</b><br>Test class: com.sandeep.RESTFW.Testcases.SampleTest2</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.sandeep.RESTFW.Testcases.SampleTest2.check6(SampleTest2.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1278002745", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1278002745'><pre>java.lang.AssertionError: The following asserts failed:
+	null,
+	null
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.sandeep.RESTFW.Testcases.SampleTest2.check6(SampleTest2.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sandeep.RESTFW.Testcases.SampleTest2.check4()'><b>check4</b><br>Test class: com.sandeep.RESTFW.Testcases.SampleTest2</td>
+<td></td>
+<td>0</td>
+<td>com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6</td></tr>
+<tr>
+<td title='com.sandeep.RESTFW.Testcases.SampleTest2.test2()'><b>test2</b><br>Test class: com.sandeep.RESTFW.Testcases.SampleTest2</td>
+<td></td>
+<td>3</td>
+<td>com.sandeep.RESTFW.Testcases.SampleTest2@72f926e6</td></tr>
 </table><p>
 </body>
 </html>
